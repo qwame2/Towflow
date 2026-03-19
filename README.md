@@ -20,12 +20,12 @@ It solves a critical real-world problem:
 
 ## 🎯 Project Highlights
 
-* 🔥 Real-time tracking system (Map-based)
-* 📱 Dual mobile apps (User + Driver)
-* ⚙️ Full backend API with authentication
-* 🧠 Scalable architecture (monorepo structure)
-* 📊 Admin-ready system design
-* 🔐 Secure authentication (JWT)
+- 🔥 Real-time tracking system (Map-based)
+- 📱 Dual mobile apps (User + Driver)
+- ⚙️ Full backend API with authentication
+- 🧠 Scalable architecture (monorepo structure)
+- 📊 Admin-ready system design
+- 🔐 Secure authentication (JWT)
 
 ---
 
@@ -35,40 +35,40 @@ It solves a critical real-world problem:
 
 ### 🏠 Home & Request Flow
 
-<img src="./screenshots/user-welcome.jpg" width="300", height="370"/>
-<img src="./screenshots/user-home.jpg" width="300", height="370"/>
-<img src="./screenshots/user-request.jpg" width="300", height="370"/>
+<img src="./screenshots/user-welcome.jpg" width="300" height="370"/>
+<img src="./screenshots/user-home.jpg" width="300" height="370"/>
+<img src="./screenshots/user-request.jpg" width="300" height="370"/>
 
 ---
 
 ### 🔧 Service Selection
 
-<img src="./screenshots/user-services.jpg" width="300", height="370"/>
+<img src="./screenshots/user-services.jpg" width="300" height="370"/>
 
 ---
 
 ### 🚗 Vehicle Management
 
-<img src="./screenshots/user-vehicles.jpg" width="300", height="370"/>
+<img src="./screenshots/user-vehicles.jpg" width="300" height="370"/>
 
 ---
 
 ### 📍 Live Tracking
 
-<img src="./screenshots/user-tracking.jpg" width="300", height="370"/>
+<img src="./screenshots/user-tracking.jpg" width="300" height="370"/>
 
 ---
 
 ### 👤 Profile & Settings
 
-<img src="./screenshots/user-profile.jpg" width="300", height="370"/>
-<img src="./screenshots/user-edit-profile.jpg" width="300", height="370"/>
+<img src="./screenshots/user-profile.jpg" width="300" height="370"/>
+<img src="./screenshots/user-edit-profile.jpg" width="300" height="370"/>
 
 ---
 
 ### 🆘 Support System
 
-<img src="./screenshots/user-help.jpg" width="300", height="370"/>
+<img src="./screenshots/user-help.jpg" width="300" height="370"/>
 
 ---
 
@@ -89,28 +89,28 @@ It solves a critical real-world problem:
 
 ### 🚗 Driver Dashboard
 
-<img src="./screenshots/driver-map.jpg" width="300", height="370"/>
-<img src="./screenshots/driver-active.jpg" width="300", height="370"/>
+<img src="./screenshots/driver-map.jpg" width="300" height="370"/>
+<img src="./screenshots/driver-active.jpg" width="300" height="370"/>
 
 ---
 
 ### 👤 Profile
 
-<img src="./screenshots/driver-profile.jpg" width="300", height="370"/>
-<img src="./screenshots/edit-profile.jpg" width="300", height="370"/>
+<img src="./screenshots/driver-profile.jpg" width="300" height="370"/>
+<img src="./screenshots/edit-profile.jpg" width="300" height="370"/>
 
 ---
 
 ### 🚚 Vehicle & Docs
 
-<img src="./screenshots/vehicle-details.jpg" width="300", height="370"/>
-<img src="./screenshots/upload-documents.jpg" width="300", height="370"/>
+<img src="./screenshots/vehicle-details.jpg" width="300" height="370"/>
+<img src="./screenshots/upload-documents.jpg" width="300" height="370"/>
 
 ---
 
 ### 📋 Menu
 
-<img src="./screenshots/driver-menu.jpg" width="300", height="370"/>
+<img src="./screenshots/driver-menu.jpg" width="300" height="370"/>
 
 ---
 
@@ -144,23 +144,23 @@ Admin Dashboard (React)
 
 **Users**
 
-* id, name, email, role
+- id, name, email, role
 
 **Drivers**
 
-* id, user_id, status, location
+- id, user_id, status, location
 
 **Vehicles**
 
-* id, driver_id, type
+- id, driver_id, type
 
 **Requests**
 
-* id, user_id, status
+- id, user_id, status
 
 **Trips**
 
-* id, request_id, earnings
+- id, request_id, earnings
 
 ---
 
@@ -171,14 +171,14 @@ http://localhost:5000/api
 
 ### Auth
 
-* POST /auth/register
-* POST /auth/login
+- POST /auth/register
+- POST /auth/login
 
 ### Requests
 
-* POST /requests
-* GET /requests/nearby
-* POST /requests/:id/accept
+- POST /requests
+- GET /requests/nearby
+- POST /requests/:id/accept
 
 ---
 
@@ -186,33 +186,33 @@ http://localhost:5000/api
 
 **Backend**
 
-* Node.js, Express
-* PostgreSQL
+- Node.js, Express
+- PostgreSQL
 
 **Frontend**
 
-* React + Tailwind
+- React + Tailwind
 
 **Mobile**
 
-* React Native (Expo)
+- React Native (Expo)
 
 ---
 
 ## 🚀 Deployment
 
-* Backend → AWS / Render
-* Database → PostgreSQL
-* Mobile → Expo
-* Web → Vercel
+- Backend → AWS / Render
+- Database → PostgreSQL
+- Mobile → Expo
+- Web → Vercel
 
 ---
 
 ## 🔐 Security
 
-* JWT authentication
-* Password hashing
-* Role-based access control
+- JWT authentication
+- Password hashing
+- Role-based access control
 
 ---
 
@@ -220,19 +220,19 @@ http://localhost:5000/api
 
 TowFlow demonstrates:
 
-* Real-time system design
-* Full-stack engineering
-* Mobile + backend integration
-* Scalable architecture thinking
+- Real-time system design
+- Full-stack engineering
+- Mobile + backend integration
+- Scalable architecture thinking
 
 ---
 
 ## 🔮 Roadmap
 
-* AI-based driver allocation
-* Predictive demand analytics
-* Payment system (MoMo) — UI completed, backend integration pending
-* Multi-region scaling
+- AI-based driver allocation
+- Predictive demand analytics
+- Payment system (MoMo) — UI completed, backend integration pending
+- Multi-region scaling
 
 ---
 
