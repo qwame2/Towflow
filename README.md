@@ -1,161 +1,146 @@
 # 🚗 TowFlow — Smart Towing & Roadside Assistance System
 
-TowFlow is a full-stack, real-time towing and dispatch platform designed to connect users in need of roadside assistance with nearby tow truck drivers efficiently and reliably.
-
-<<<<<<< HEAD
-It addresses a critical real-world problem: **slow and uncoordinated emergency response during vehicle breakdowns**, by enabling instant service requests, live tracking, and seamless communication between users, drivers, and administrators.
-=======
-It solves a critical problem: **slow, uncoordinated emergency response in vehicle breakdown situations** by enabling instant service requests, live tracking, and seamless communication between users, drivers, and administrators.
->>>>>>> 2f37b7f643580e403d91ff8317e7f0239f5ce232
+![Status](https://img.shields.io/badge/status-active--development-orange)
+![Backend](https://img.shields.io/badge/backend-Node.js-green)
+![Frontend](https://img.shields.io/badge/frontend-React-blue)
+![Mobile](https://img.shields.io/badge/mobile-React%20Native-purple)
+![Database](https://img.shields.io/badge/database-PostgreSQL-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ---
 
-## ⚡ Key Features
+## 🚀 Overview
 
-<<<<<<< HEAD
-* 📍 Real-time driver tracking using Mapbox
-* 🚨 Instant towing request and dispatch system
-* 📱 Dedicated mobile apps for users and drivers
-* 🧭 Smart job assignment and navigation
-* 📊 Admin dashboard for monitoring and analytics
-* 🔐 Secure authentication with JWT
+TowFlow is a full-stack, real-time towing and dispatch platform designed to connect users in need of roadside assistance with nearby tow truck drivers efficiently and reliably.
+
+It solves a critical real-world problem:
+**slow and uncoordinated emergency response during vehicle breakdowns** — by enabling instant service requests, live tracking, and seamless communication between users, drivers, and administrators.
+
+---
+
+## 🎯 Project Highlights
+
+* 🔥 Real-time tracking system (Map-based)
+* 📱 Dual mobile apps (User + Driver)
+* ⚙️ Full backend API with authentication
+* 🧠 Scalable architecture (monorepo structure)
+* 📊 Admin-ready system design
+* 🔐 Secure authentication (JWT)
 
 ---
 
 # 📱 User App (Customer Experience)
 
-The TowFlow user application allows customers to request roadside assistance, track drivers in real-time, and manage their vehicles and services.
-
 ---
 
 ### 🏠 Home & Request Flow
 
-![Welcome Screen](./screenshots/user-welcome.jpg)
-![Home Screen](./screenshots/user-home.jpg)
-![Request Service](./screenshots/user-request.jpg)
+<img src="./screenshots/user-welcome.jpg" width="300"/>
+<img src="./screenshots/user-home.jpg" width="300"/>
+<img src="./screenshots/user-request.jpg" width="300"/>
 
 ---
 
 ### 🔧 Service Selection
-![Nearby Assistance](./screenshots/user-services.jpg)
-![In Map Service Request](./screenshots/user-mapservices.jpg)
 
+<img src="./screenshots/user-services.jpg" width="300"/>
 
 ---
 
 ### 🚗 Vehicle Management
 
-![My Vehicles](./screenshots/user-vehicles.jpg)
+<img src="./screenshots/user-vehicles.jpg" width="300"/>
 
 ---
 
 ### 📍 Live Tracking
 
-![Live Tracking](./screenshots/user-tracking.jpg)
+<img src="./screenshots/user-tracking.jpg" width="300"/>
 
 ---
 
 ### 👤 Profile & Settings
 
-![User Profile](./screenshots/user-profile.jpg)
-![Edit Profile](./screenshots/user-edit-profile.jpg)
+<img src="./screenshots/user-profile.jpg" width="300"/>
+<img src="./screenshots/user-edit-profile.jpg" width="300"/>
 
 ---
 
 ### 🆘 Support System
 
-![Help Center](./screenshots/user-help.jpg)
-
----
-
-> ⚠️ Note: The user module is actively under development and continuously improving.
+<img src="./screenshots/user-help.jpg" width="300"/>
 
 ---
 
 ## 🔄 User Workflow
 
-1. User selects issue (flat tire, fuel, lockout, etc.)
-2. System fetches nearby service providers
-3. User selects preferred provider
-4. Request is sent to backend
-5. Driver is assigned
-6. User tracks driver in real-time
-7. Service is completed
+1. Select issue (flat tire, fuel, etc.)
+2. System finds nearby drivers
+3. Request is sent
+4. Driver is assigned
+5. Real-time tracking begins
+6. Service completed
 
 ---
 
 # 📱 Driver App (In Development)
 
-Below are screenshots from the TowFlow driver application.
+---
 
-### 🚗 Driver Dashboard & Map View
+### 🚗 Driver Dashboard
 
-![Driver Map](./screenshots/driver-map.jpg)
-![Driver Active Trip](./screenshots/driver-active.jpg)
+<img src="./screenshots/driver-map.jpg" width="300"/>
+<img src="./screenshots/driver-active.jpg" width="300"/>
 
 ---
 
-### 👤 Profile & Account
+### 👤 Profile
 
-![Driver Profile](./screenshots/driver-profile.jpg)
-![Edit Profile](./screenshots/edit-profile.jpg)
+<img src="./screenshots/driver-profile.jpg" width="300"/>
+<img src="./screenshots/edit-profile.jpg" width="300"/>
 
 ---
 
-### 🚚 Vehicle & Documents
+### 🚚 Vehicle & Docs
 
-![Vehicle Details](./screenshots/vehicle-details.jpg)
-![Upload Documents](./screenshots/upload-documents.jpg)
+<img src="./screenshots/vehicle-details.jpg" width="300"/>
+<img src="./screenshots/upload-documents.jpg" width="300"/>
 
 ---
 
 ### 📋 Menu
 
-![Driver Menu](./screenshots/driver-menu.jpg)
+<img src="./screenshots/driver-menu.jpg" width="300"/>
 
 ---
 
 ## 🔄 Driver Workflow
 
-1. Driver goes online
-2. System scans for nearby requests
-3. Driver accepts job
-4. Navigation + tracking begins
-5. Trip completed and earnings updated
+1. Go online
+2. Receive nearby requests
+3. Accept job
+4. Navigate to user
+5. Complete trip
 
 ---
 
-## 🧭 System Architecture (Production-Oriented)
+# 🧭 System Architecture
 
 ```
-                  ┌──────────────────────────┐
-                  │     Mobile Clients       │
-                  │  (User & Driver Apps)   │
-                  └──────────┬──────────────┘
-                             │ REST / JSON
-                             ▼
-                  ┌──────────────────────────┐
-                  │      Backend API         │
-                  │   Node.js + Express      │
-                  └──────────┬──────────────┘
-                             │
-        ┌────────────────────┼────────────────────┐
-        ▼                    ▼                    ▼
-┌───────────────┐   ┌────────────────┐   ┌──────────────────┐
-│ PostgreSQL DB │   │ Realtime Layer │   │ Notification Svc │
-│  (Core Data)  │   │ (WebSockets)   │   │ (Email / Push)   │
-└───────────────┘   └────────────────┘   └──────────────────┘
-                             │
-                             ▼
-                  ┌──────────────────────────┐
-                  │   Admin Dashboard (Web)  │
-                  │ React + Analytics        │
-                  └──────────────────────────┘
+Mobile Apps (User/Driver)
+        ↓
+Backend API (Node.js)
+        ↓
+PostgreSQL Database
+        ↓
+Realtime Updates (WebSocket Layer)
+        ↓
+Admin Dashboard (React)
 ```
 
 ---
 
-## 🗄️ Database Design (Core Entities)
+## 🗄️ Database Design
 
 **Users**
 
@@ -167,11 +152,11 @@ Below are screenshots from the TowFlow driver application.
 
 **Vehicles**
 
-* id, driver_id, type, plate
+* id, driver_id, type
 
 **Requests**
 
-* id, user_id, status, location
+* id, user_id, status
 
 **Trips**
 
@@ -194,83 +179,40 @@ http://localhost:5000/api
 * POST /requests
 * GET /requests/nearby
 * POST /requests/:id/accept
-=======
-- 📍 Real-time driver tracking using Mapbox
-- 🚨 Instant towing request and dispatch system
-- 📱 Dedicated mobile apps for users and drivers
-- 🧭 Smart job assignment and navigation
-- 📊 Admin dashboard for monitoring and analytics
-- 🔐 Secure authentication with JWT
-
----
-
-## 🧱 Architecture Overview
-
-TowFlow is built as a scalable monorepo with four main components:
-
-- **`towflow-backend`**  
-  REST API handling authentication, service requests, and real-time operations using PostgreSQL.
-
-- **`towflow-web`**  
-  Admin dashboard for dispatchers to monitor requests, track drivers, and manage operations.
-
-- **`towflow-user`**  
-  Mobile app for customers to request towing services and track drivers live.
-
-- **`towflow-driver`**  
-  Mobile app for drivers to receive jobs, navigate, and update status in real-time.
->>>>>>> 2f37b7f643580e403d91ff8317e7f0239f5ce232
 
 ---
 
 ## 🛠️ Tech Stack
 
-<<<<<<< HEAD
 **Backend**
 
 * Node.js, Express
 * PostgreSQL
 
 **Frontend**
-=======
-### Backend
-- Node.js, Express
-- PostgreSQL
-- JWT Authentication
-- Bcrypt
-- Nodemailer
-
-### Web Dashboard
-- React (Vite + TypeScript)
-- Tailwind CSS
-- Mapbox GL
-- React Hook Form + Zod
-
-### Mobile Apps
-- Expo (React Native)
-- React Navigation
-- React Native Maps
-- Axios
-- i18next
-
----
->>>>>>> 2f37b7f643580e403d91ff8317e7f0239f5ce232
 
 * React + Tailwind
 
-<<<<<<< HEAD
 **Mobile**
 
 * React Native (Expo)
 
 ---
 
-## 🚀 Deployment Strategy
+## 🚀 Deployment
 
 * Backend → AWS / Render
-* DB → PostgreSQL
+* Database → PostgreSQL
 * Mobile → Expo
 * Web → Vercel
+
+---
+
+## 🔐 Security
+
+* JWT authentication
+* Password hashing
+* Role-based access control
 
 ---
 
@@ -279,17 +221,18 @@ TowFlow is built as a scalable monorepo with four main components:
 TowFlow demonstrates:
 
 * Real-time system design
-* Full-stack architecture
+* Full-stack engineering
 * Mobile + backend integration
+* Scalable architecture thinking
 
 ---
 
-## 🔮 Future Roadmap
+## 🔮 Roadmap
 
-- AI-based driver allocation  
-- Predictive demand analytics  
-- Backend integration for payments (MoMo already designed in UI)  
-- Multi-region scaling  
+* AI-based driver allocation
+* Predictive demand analytics
+* Payment system (MoMo) — UI completed, backend integration pending
+* Multi-region scaling
 
 ---
 
@@ -303,32 +246,3 @@ TowFlow demonstrates:
 
 **Adomako Emmanuel**
 Full-stack Developer | Systems Builder
-=======
-
-```text
-TowFlow/
-├── towflow-backend/     # Node.js Express API
-├── towflow-web/         # React Admin Dashboard
-├── towflow-user/        # React Native Customer App
-├── towflow-driver/      # React Native Driver App
-├── towflow.sql          # Database Schema
-└── node_modules/        # Shared dependencies
-```
-
-
----
-
-## ⚙️ Development Environment
-
-- Node.js v18+
-- PostgreSQL
-- Expo SDK 54
-- Windows OS
-
----
-
-## 🚀 Vision
-
-TowFlow is designed to evolve into a **scalable emergency logistics platform**, supporting real-time coordination, intelligent dispatching, and future integrations such as AI-driven route optimization and predictive maintenance alerts.
-
->>>>>>> 2f37b7f643580e403d91ff8317e7f0239f5ce232
