@@ -72,9 +72,19 @@ TowFlow/
 └── node_modules/        # Shared dependencies
 ```
 
-## ⚙️ Development Environment Info
 
-- **OS**: Windows
-- **Node.js**: Expected (v18+)
-- **Database**: PostgreSQL
-- **Mobile Environment**: Expo SDK 54
+---
+
+## ⚙️ Development Environment
+
+- Node.js v18+
+- PostgreSQL
+- Expo SDK 54
+- Windows OS
+
+---
+
+## 🚀 Vision
+
+TowFlow is designed to evolve into a **scalable emergency logistics platform**, supporting real-time coordination, intelligent dispatching, and future integrations such as AI-driven route optimization and predictive maintenance alerts.
+
