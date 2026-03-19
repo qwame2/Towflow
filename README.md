@@ -1,43 +1,66 @@
-# TowFlow
+# 🚗 TowFlow — Smart Towing & Roadside Assistance System
 
-TowFlow is a comprehensive towing management and dispatch system designed to streamline the connection between users in need of towing services and professional tow truck drivers.
+TowFlow is a full-stack, real-time towing and dispatch platform designed to connect users in need of roadside assistance with nearby tow truck drivers efficiently and reliably.
 
-## 🚀 System Overview
+It solves a critical problem: **slow, uncoordinated emergency response in vehicle breakdown situations** by enabling instant service requests, live tracking, and seamless communication between users, drivers, and administrators.
 
-The project is structured as a monorepo containing the following components:
+---
 
-- **`towflow-backend`**: A robust REST API built with Node.js and Express. It handles user authentication, service requests, and real-time data management using PostgreSQL.
-- **`towflow-web`**: A modern administration and monitoring dashboard built with React, Vite, and TypeScript. It features real-time tracking via Mapbox GL and data visualization with Recharts.
-- **`towflow-user`**: A mobile application for customers built with Expo (React Native). It allows users to request tows, track their driver in real-time, and manage their profile.
-- **`towflow-driver`**: A dedicated mobile application for tow truck operators built with Expo (React Native). It manages job assignments, navigation, and status updates.
+## ⚡ Key Features
+
+- 📍 Real-time driver tracking using Mapbox
+- 🚨 Instant towing request and dispatch system
+- 📱 Dedicated mobile apps for users and drivers
+- 🧭 Smart job assignment and navigation
+- 📊 Admin dashboard for monitoring and analytics
+- 🔐 Secure authentication with JWT
+
+---
+
+## 🧱 Architecture Overview
+
+TowFlow is built as a scalable monorepo with four main components:
+
+- **`towflow-backend`**  
+  REST API handling authentication, service requests, and real-time operations using PostgreSQL.
+
+- **`towflow-web`**  
+  Admin dashboard for dispatchers to monitor requests, track drivers, and manage operations.
+
+- **`towflow-user`**  
+  Mobile app for customers to request towing services and track drivers live.
+
+- **`towflow-driver`**  
+  Mobile app for drivers to receive jobs, navigate, and update status in real-time.
+
+---
 
 ## 🛠️ Tech Stack
 
 ### Backend
-- **Core**: Node.js, Express
-- **Database**: PostgreSQL (PostgreSQL driver: `pg`)
-- **Authentication**: JWT (JSON Web Tokens), Bcrypt for password hashing
-- **Communication**: Nodemailer for email notifications
-- **Environment Management**: Dotenv
+- Node.js, Express
+- PostgreSQL
+- JWT Authentication
+- Bcrypt
+- Nodemailer
 
 ### Web Dashboard
-- **Framework**: React 19, Vite
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Maps**: Mapbox GL, React Map GL
-- **State Management & Forms**: React Hook Form, Zod
-- **Icons & UI**: Lucide React, Radix UI components
-- **Routing**: React Router DOM
+- React (Vite + TypeScript)
+- Tailwind CSS
+- Mapbox GL
+- React Hook Form + Zod
 
-### Mobile Apps (User & Driver)
-- **Framework**: Expo / React Native
-- **Navigation**: Expo Router, React Navigation
-- **Maps**: React Native Maps
-- **APIs**: Axios for networking
-- **Localization**: i18next
-- **Security**: Expo Secure Store, Expo Local Authentication
+### Mobile Apps
+- Expo (React Native)
+- React Navigation
+- React Native Maps
+- Axios
+- i18next
+
+---
 
 ## 📂 Project Structure
+
 
 ```text
 TowFlow/
