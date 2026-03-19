@@ -35,40 +35,40 @@ It solves a critical real-world problem:
 
 ### 🏠 Home & Request Flow
 
-<img src="./screenshots/user-welcome.jpg" width="300"/>
-<img src="./screenshots/user-home.jpg" width="300"/>
-<img src="./screenshots/user-request.jpg" width="300"/>
+<img src="./screenshots/user-welcome.jpg" width="300", height="370"/>
+<img src="./screenshots/user-home.jpg" width="300", height="370"/>
+<img src="./screenshots/user-request.jpg" width="300", height="370"/>
 
 ---
 
 ### 🔧 Service Selection
 
-<img src="./screenshots/user-services.jpg" width="300"/>
+<img src="./screenshots/user-services.jpg" width="300", height="370"/>
 
 ---
 
 ### 🚗 Vehicle Management
 
-<img src="./screenshots/user-vehicles.jpg" width="300"/>
+<img src="./screenshots/user-vehicles.jpg" width="300", height="370"/>
 
 ---
 
 ### 📍 Live Tracking
 
-<img src="./screenshots/user-tracking.jpg" width="300"/>
+<img src="./screenshots/user-tracking.jpg" width="300", height="370"/>
 
 ---
 
 ### 👤 Profile & Settings
 
-<img src="./screenshots/user-profile.jpg" width="300"/>
-<img src="./screenshots/user-edit-profile.jpg" width="300"/>
+<img src="./screenshots/user-profile.jpg" width="300", height="370"/>
+<img src="./screenshots/user-edit-profile.jpg" width="300", height="370"/>
 
 ---
 
 ### 🆘 Support System
 
-<img src="./screenshots/user-help.jpg" width="300"/>
+<img src="./screenshots/user-help.jpg" width="300", height="370"/>
 
 ---
 
@@ -89,28 +89,28 @@ It solves a critical real-world problem:
 
 ### 🚗 Driver Dashboard
 
-<img src="./screenshots/driver-map.jpg" width="300"/>
-<img src="./screenshots/driver-active.jpg" width="300"/>
+<img src="./screenshots/driver-map.jpg" width="300", height="370"/>
+<img src="./screenshots/driver-active.jpg" width="300", height="370"/>
 
 ---
 
 ### 👤 Profile
 
-<img src="./screenshots/driver-profile.jpg" width="300"/>
-<img src="./screenshots/edit-profile.jpg" width="300"/>
+<img src="./screenshots/driver-profile.jpg" width="300", height="370"/>
+<img src="./screenshots/edit-profile.jpg" width="300", height="370"/>
 
 ---
 
 ### 🚚 Vehicle & Docs
 
-<img src="./screenshots/vehicle-details.jpg" width="300"/>
-<img src="./screenshots/upload-documents.jpg" width="300"/>
+<img src="./screenshots/vehicle-details.jpg" width="300", height="370"/>
+<img src="./screenshots/upload-documents.jpg" width="300", height="370"/>
 
 ---
 
 ### 📋 Menu
 
-<img src="./screenshots/driver-menu.jpg" width="300"/>
+<img src="./screenshots/driver-menu.jpg" width="300", height="370"/>
 
 ---
 
